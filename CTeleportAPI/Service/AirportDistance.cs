@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using static System.Math;
 
 namespace CTeleportAPI.Service
 {
@@ -29,19 +30,19 @@ namespace CTeleportAPI.Service
 
         private static double GetSphericalDistance(double[] sourceCoordinate, double[] destinationCoordinate)
         {
-            return Math.Acos(
-                             Math.Cos(sourceCoordinate[1] * (Math.PI / 180)) *
-                             Math.Cos(sourceCoordinate[0] * (Math.PI / 180)) *
-                             Math.Cos(destinationCoordinate[1] * (Math.PI / 180)) *
-                             Math.Cos(destinationCoordinate[0] * (Math.PI / 180))
+             return Acos(
+                             Cos(sourceCoordinate[1] * (PI / 180)) *
+                             Cos(sourceCoordinate[0] * (PI / 180)) *
+                             Cos(destinationCoordinate[1] * (PI / 180)) *
+                             Cos(destinationCoordinate[0] * (PI / 180))
                              +
-                             Math.Cos(sourceCoordinate[1] * (Math.PI / 180)) *
-                             Math.Sin(sourceCoordinate[0] * (Math.PI / 180)) *
-                             Math.Cos(destinationCoordinate[1] * (Math.PI / 180)) *
-                             Math.Sin(destinationCoordinate[0] * (Math.PI / 180))
+                             Cos(sourceCoordinate[1] * (PI / 180)) *
+                             Sin(sourceCoordinate[0] * (PI / 180)) *
+                             Cos(destinationCoordinate[1] * (PI / 180)) *
+                             Sin(destinationCoordinate[0] * (PI / 180))
                              +
-                             Math.Sin(sourceCoordinate[1] * (Math.PI / 180)) *
-                             Math.Sin(destinationCoordinate[1] * (Math.PI / 180))
+                             Sin(sourceCoordinate[1] * (PI / 180)) *
+                             Sin(destinationCoordinate[1] * (PI / 180))
                             ) * 3959;
         }
     }
