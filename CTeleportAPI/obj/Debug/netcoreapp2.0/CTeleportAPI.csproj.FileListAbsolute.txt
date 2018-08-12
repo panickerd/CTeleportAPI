@@ -1,0 +1,11 @@
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\bin\Debug\netcoreapp2.0\CTeleportAPI.deps.json
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\bin\Debug\netcoreapp2.0\CTeleportAPI.runtimeconfig.json
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\bin\Debug\netcoreapp2.0\CTeleportAPI.runtimeconfig.dev.json
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\bin\Debug\netcoreapp2.0\CTeleportAPI.dll
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\obj\Debug\netcoreapp2.0\CTeleportAPI.csprojAssemblyReference.cache
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\obj\Debug\netcoreapp2.0\CTeleportAPI.csproj.CoreCompileInputs.cache
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\obj\Debug\netcoreapp2.0\CTeleportAPI.AssemblyInfoInputs.cache
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\obj\Debug\netcoreapp2.0\CTeleportAPI.AssemblyInfo.cs
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\bin\Debug\netcoreapp2.0\CTeleportAPI.pdb
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\obj\Debug\netcoreapp2.0\CTeleportAPI.dll
+c:\users\dpanicker\source\repos\CTeleportAPI\CTeleportAPI\obj\Debug\netcoreapp2.0\CTeleportAPI.pdb
