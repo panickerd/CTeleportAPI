@@ -9,11 +9,12 @@ namespace CTeleportAPI.Service
 {
     public class AirportDistance : ICalculateDistance
     {
-        public async Task<string> CalculateAirportDistance(string source, string destination)
+        public string CalculateAirportDistance(string source, string destination)
         {
             const string AirportUrl = "https://places-dev.cteleport.com/airports/";
-            double[] sourceCoordinate = await GetResponse(string.Concat(AirportUrl, source));
-            double[] destinationCoordinate = await GetResponse(string.Concat(AirportUrl, destination));
+            Task<double[]> sourceCoordinate = GetResponse(string.Concat(AirportUrl, source));
+            Task<double[]> destinationCoordinate = GetResponse(string.Concat(AirportUrl, destination));
+            Task.WaitAll();
             double distance = GetSphericalDistance(sourceCoordinate, destinationCoordinate);
             return distance.ToString();
         }
