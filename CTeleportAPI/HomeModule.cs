@@ -7,10 +7,10 @@ namespace CTeleportAPI
     {
         public HomeModule(ICalculateDistance calculateDistance)
         {
-            Get("/GetDistance", async args =>
+            Get("/GetDistance", _ =>
             {
                 this.Context.EnableOutputCache(30);
-                return await calculateDistance.CalculateAirportDistance(this.Request.Query["source"],
+                return calculateDistance.CalculateAirportDistance(this.Request.Query["source"],
                    this.Request.Query["destination"]);
             });
         }
