@@ -15,7 +15,7 @@ namespace CTeleportAPI.Service
             Task<double[]> sourceCoordinate = GetResponse(string.Concat(AirportUrl, source));
             Task<double[]> destinationCoordinate = GetResponse(string.Concat(AirportUrl, destination));
             Task.WaitAll();
-            double distance = GetSphericalDistance(sourceCoordinate, destinationCoordinate);
+            double distance = GetSphericalDistance(sourceCoordinate.Result, destinationCoordinate.Result);
             return distance.ToString();
         }
 
